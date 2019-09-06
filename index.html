@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>me</title>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/me.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="row nav-row">
+        <div class="col topnav">
+          <span id="about-nav">About Me</span>
+          <span id="projects-nav">Projects</span>
+          <span id="resume-nav">Resume</span>
+          <span id="contact-nav">Contact</span>
+        </div>
+      </div>
+      <div class="row main-row">
+        <div class="col-md-6 left-bio">
+          <div class="bio">
+            <h1>About Me</h1>
+            <p>orem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+              Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+        <div class="col-md-6 right">
+          <div class="container-fluid right-container">
+            <div class="row right-row-1">
+              <div class="container-fluid projects-container">
+                <div class="row projects-row-1">
+                  <div class="col project1">
+                    <div class="map-game">
+                      <h4>Map Game</h4>
+                      <p>Online game that tests knowledge of US-states. Built with
+                      HTML5, CSS3, JQuery and Javascript</p>
+                    </div>
+                  </div>
+                  <div class="col project2">
+                    <div class="space-game">
+                      <h4>Space Shooter</h4>
+                      <p>Old school, 2D space shooter created in Unity using C#</p>
+                    </div>
+                  </div>
+                  <div class="col project3">
+                    <div class="itravel">
+                      <h4>iTravel</h4>
+                      <p>Airline ticketing software developed in Java and JavaFX</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row projects-row-2">
+                  <div class="col project4">
+                    <div class="website">
+                      <h4>website.me</h4>
+                      <p>Personal website developed in HTML5, CSS3 and Javascript
+                        utilizing JQuery and Bootstrap</p>
+                    </div>
+                  </div>
+                  <div class="col project5">
+                    <div class="bitmap">
+                      <h4>Bitmap Imaging</h4>
+                      <p>Program developed in C++ that takes command line arguments to
+                      produce a bitmap image</p>
+                    </div>
+                  </div>
+                  <div class="col project6">
+                    <div class="strassen">
+                      <h4>Strassen's Algorithm</h4>
+                      <p>Program developed in Java that implements
+                      Strassen's algorithm using recursion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row right-row-2">
+              <div class="container-fluid other-container">
+                <div class="row other-row">
+                  <div class="col resume">
+                    <div class="download">
+                      <h1>Resume</h1>
+                      <i class="fa fa-download" style="font-size:48px; color:white; margin-left:10px;"></i>
+                    </div>
+                    <h4 class="download-text">Click to download</h4>
+                  </div>
+                  <div class="col contact">
+                    <div class="links">
+                      <div class="linkedin">
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                      <div class="email">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <div class="phone">
+                        <i class="fa fa-phone"></i>
+                      </div>
+                      <div class="github">
+                        <i class="fa fa-github"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        $(".download, .download-text, .links, .bio").hide();
+        $(".map-game, .space-game, .itravel, .website, .bitmap, .strassen").hide();
+        $(".left-bio").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".bio").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)")
+          $(".bio").hide();
+        });
+
+        $(".resume").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".download, .download-text").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".download, .download-text").hide();
+        });
+
+        $(".contact").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".links").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".links").hide();
+        });
+
+        $(".linkedin").hover(function(){
+          $(".fa-linkedin").css("color", "black");
+          $(this).css("background-color", "white");
+        },
+        function(){
+          $(".fa-linkedin").css("color", "white");
+          $(this).css("background-color", "");
+        });
+
+        $(".phone").hover(function(){
+          $(".fa-phone").css("color", "black");
+          $(this).css("background-color", "white");
+        },
+        function(){
+          $(".fa-phone").css("color", "white");
+          $(this).css("background-color", "");
+        });
+
+        $(".email").hover(function(){
+          $(".fa-envelope").css("color", "black");
+          $(this).css("background-color", "white");
+        },
+        function(){
+          $(".fa-envelope").css("color", "white");
+          $(this).css("background-color", "");
+        });
+
+        $(".github").hover(function(){
+          $(".fa-github").css("color", "black");
+          $(this).css("background-color", "white");
+        },
+        function(){
+          $(".fa-github").css("color", "white");
+          $(this).css("background-color", "");
+        });
+
+        $(".project1").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".map-game").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".map-game").hide();
+        });
+
+        $(".project2").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".space-game").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".space-game").hide();
+        });
+
+        $(".project3").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".itravel").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".itravel").hide();
+        });
+
+        $(".project4").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".website").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".website").hide();
+        });
+
+        $(".project5").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".bitmap").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".bitmap").hide();
+        });
+
+        $(".project6").hover(function(){
+          $(this).css("background-color", "rgba(28, 27, 27)");
+          $(".strassen").show();
+        },
+        function(){
+          $(this).css("background-color", "rgba(100, 127, 140,.5)");
+          $(".strassen").hide();
+        });
+
+        $("#about-nav").hover(function(){
+          $(this).css({"background-color":"#ddd", "color":"black"});
+          $(".left-bio").css("background-color", "rgba(28, 27, 27)");
+          $(".bio").show();
+        },
+        function(){
+          $(this).css({"background-color":"", "color":"white"});
+          $(".left-bio").css("background-color", "rgba(100, 127, 140,.5)");
+          $(".bio").hide();
+        });
+
+        $("#contact-nav").hover(function(){
+          $(this).css({"background-color":"#ddd", "color":"black"});
+          $(".contact").css("background-color", "rgba(28, 27, 27)");
+          $(".links").show();
+        },
+        function(){
+          $(this).css({"background-color":"", "color":"white"});
+          $(".contact").css("background-color", "rgba(100, 127, 140,.5)");
+          $(".links").hide();
+        });
+
+        $("#projects-nav").hover(function(){
+          $(this).css({"background-color":"#ddd", "color":"black"});
+          $(".project1, .project2, .project3, .project4, .project4, .project5, .project6").css("background-color", "rgba(28, 27, 27)");
+          $(".map-game, .space-game, .itravel, .website, .bitmap, .strassen").show();
+        },
+        function(){
+          $(this).css({"background-color":"", "color":"white"});
+          $(".project1, .project2, .project3, .project4, .project4, .project5, .project6").css("background-color", "rgba(100, 127, 140,.5)");
+          $(".map-game, .space-game, .itravel, .website, .bitmap, .strassen").hide();
+        });
+
+        $("#resume-nav").hover(function(){
+          $(this).css({"background-color":"#ddd", "color":"black"});
+          $(".resume").css("background-color", "rgba(28, 27, 27)");
+          $(".download, .download-text").show();
+        },
+        function(){
+          $(this).css({"background-color":"", "color":"white"});
+          $(".resume").css("background-color", "rgba(100, 127, 140,.5)");
+          $(".download, .download-text").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
