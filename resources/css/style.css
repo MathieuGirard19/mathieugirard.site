@@ -44,7 +44,7 @@ h1, h2, h3, h4, p
   height: 96.5%;
 }
 
-.left-bio
+/* .left-bio
 {
   background-color: blue;
   height: 100%;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, p
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .bio
 {
